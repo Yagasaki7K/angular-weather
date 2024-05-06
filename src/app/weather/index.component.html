@@ -1,0 +1,16 @@
+<div class="content">
+    <header>
+        <h1>AngularWeather</h1>
+        <input type="text" autocomplete="off" class="search-box" (keyup)="setQuery($event)" placeholder="Search for a city..." />
+    </header>
+    <main>
+        <section class="location">
+            <div class="city">{{ weatherCity }}</div>
+            <div class="date">{{ weatherDate }}</div>
+        </section>
+
+        <div class="current">
+            <div class="temp">{{ weatherCelsius }}</div>
+        </div>
+    </main>
+</div>
